@@ -1,0 +1,60 @@
+{
+	"id": "fastqc-0.11.5",
+	"name": "jawon-fastqc",
+	"icon": null,
+	"parallelism": "PARALLEL",
+	"defaultProcessorsPerNode": 68,
+	"defaultMemoryPerNode": 1,
+	"defaultNodeCount": 1,
+	"defaultMaxRunTime": "00:10:00",
+	"defaultQueue": "normal",
+	"version": "0.11.5",
+	"isPublic": false,
+	"helpURI": "",
+	"label": "fastqc-0.11.5",
+	"owner": "wonaya",
+	"shortDescription": "Fastqc",
+	"longDescription": "Fastqc! FASTQC!",
+	"tags": [],
+	"ontology": [],
+	"executionType": "HPC",
+	"executionSystem": "wonaya.NeuroNex-3DEM.exec.stampede2.HPC",
+	"deploymentPath": "applications/fastqc-0.11.5/stampede2/",
+	"deploymentSystem": "utrc-home.wonaya",
+	"templatePath": "test.template",
+	"testPath": "test.sh",
+	"checkpointable": false,
+	"modules": [],
+	"available": true,
+	"inputs": [{
+		"id": "inputFastq",
+		"value": {
+			"validator": "",
+			"visible": true,
+			"required": true,
+			"order": 0,
+			"enquote": false,
+			"default": "agave://utrc.storage.community/examples/fastqc/SP1.fq"
+		},
+		"details": {
+			"label": "Input Fastq",
+			"description": "Fastq read sequence",
+			"argument": null,
+			"showArgument": false,
+			"repeatArgument": false
+		},
+		"semantics": {
+			"minCardinality": 1,
+			"maxCardinality": 1,
+			"ontology": [
+				"xsd:string"
+			],
+			"fileTypes": [
+				"raw-0"
+			]
+		}
+	}],
+	"parameters": [],
+	"outputs": []
+}
+

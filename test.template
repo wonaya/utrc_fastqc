@@ -1,0 +1,13 @@
+# Set up inputs and parameters
+
+inputFastq=${inputFastq}
+
+# Launch serial code...
+
+module load tacc-singularity
+singularity pull shub://patrickvdb/fastqc-singularity
+singularity exec $WORK/singularity_cache/patrickvdb-fastqc-singularity-master-latest.simg fastqc ${inputFastq}
+
+# ---------------------------------------------------
+
+
