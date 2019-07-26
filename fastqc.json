@@ -20,7 +20,7 @@
 	"executionType": "HPC",
 	"executionSystem": "wonaya.NeuroNex-3DEM.exec.stampede2.HPC",
 	"deploymentPath": "applications/fastqc-0.11.5/stampede2/",
-	"deploymentSystem": "3dem.home.wonaya",
+	"deploymentSystem": "utrc-home.wonaya",
 	"templatePath": "test.template",
 	"testPath": "test.sh",
 	"checkpointable": false,
